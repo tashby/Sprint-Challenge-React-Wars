@@ -3,7 +3,7 @@ import React from "react";
 const Card = props =>{
     return(
         <div>
-            <p>{props.name}</p>
+            <h1>{props.name}</h1>
             <img src={props.avatar} alt="avatar"></img>
             <p>status: {props.status}</p>            
             <p>species: {props.species}</p>
