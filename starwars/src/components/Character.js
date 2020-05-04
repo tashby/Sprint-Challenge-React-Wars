@@ -21,10 +21,11 @@ export default function Character(){
 
     return(
         <div className = "name">
-            <h1>{Characters.map(character =>{
+            <p>{Characters.map(character =>{
                 return(
                     <Card
                     name = {character.name}
+                    avatar = {character.image}
                     status = {character.status}
                     species = {character.species}
                     origin = {character.origin.name}
@@ -33,7 +34,7 @@ export default function Character(){
                     />
                 );
             })}
-            </h1>
+            </p>
              
         </div>
 
