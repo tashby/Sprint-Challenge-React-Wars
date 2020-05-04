@@ -27,7 +27,7 @@ export default function Character(){
                     name = {character.name}
                     status = {character.status}
                     species = {character.species}
-                    type = {character.type}
+                    origin = {character.origin.name}
                     gender = {character.gender}
 
                     />

@@ -6,7 +6,7 @@ const Card = props =>{
             <p>{props.name}</p>
             <p>status: {props.status}</p>            
             <p>species: {props.species}</p>
-            <p>type: {props.type}</p>
+            <p>origin: {props.origin}</p>
             <p>gender: {props.gender}</p>
         </div>
     );
