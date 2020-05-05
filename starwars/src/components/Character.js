@@ -1,7 +1,7 @@
 // Write your Character component here
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import Card from "./Card"
+import BioCard from "./Card"
 
 
 export default function Character(){
@@ -21,9 +21,9 @@ export default function Character(){
 
     return(
         <div className = "name">
-            <p>{Characters.map(character =>{
+            {Characters.map(character =>{
                 return(
-                    <Card
+                    <BioCard
                     name = {character.name}
                     avatar = {character.image}
                     status = {character.status}
@@ -34,8 +34,6 @@ export default function Character(){
                     />
                 );
             })}
-            </p>
-             
         </div>
 
     )

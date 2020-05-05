@@ -1,16 +1,24 @@
 import React from "react";
+import {
+    Card, CardImg, CardText, CardBody,
+    CardTitle, CardSubtitle, Button
+  } from 'reactstrap';
 
-const Card = props =>{
+const BioCard = props =>{
     return(
-        <div>
-            <h1>{props.name}</h1>
-            <img src={props.avatar} alt="avatar"></img>
-            <p>status: {props.status}</p>            
-            <p>species: {props.species}</p>
-            <p>origin: {props.origin}</p>
-            <p>gender: {props.gender}</p>
-        </div>
+     
+            <Card className="bg-info" style={{ padding: '.5rem' }}>
+            <CardImg top width="100%" src={props.avatar} alt="avatar" />
+            <CardBody>
+            <CardTitle>{props.name}</CardTitle>
+            <CardText>status: {props.status}</CardText>            
+            <CardText>species: {props.species}</CardText>
+            <CardText>origin: {props.origin}</CardText>
+            <CardText>gender: {props.gender}</CardText>
+            </CardBody>
+            </Card>
+
     );
 
 };
-export default Card;
+export default BioCard;
